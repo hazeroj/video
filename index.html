@@ -22,5 +22,20 @@
     <video id="grayVP210055_Impressions" width="1920" height="1080" autoplay loop muted controls>
         <source src="./logo.mp4" type="video/mp4" >
       </video>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('grayVP210055_Impressions');
+            video.play();
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var iframe = document.getElementById('ytplayer');
+        iframe.src += "&autoplay=1&mute=1";  // Ensure autoplay and mute are enabled
+    });
+</script>
 </body>
 </html>
